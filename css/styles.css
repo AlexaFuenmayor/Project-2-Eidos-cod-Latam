@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    font-family: 'Niramit', sans-serif;
+}
+
+/* Para quitar los puntos a los items de listas */
+/* ul {
+    list-style: none;
+} */
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+nav{
+    margin-left: 2rem;
+}
+nav > a{
+    margin-left: 0.4rem ;
+    font-size: 1.5rem;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+/* main {
+    margin: auto;
+} */
+main img{
+    height: 30vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+
+}
+
+.logo-car{
+    height: 10vh;
+}
+
+article{
+    max-width: 70vw;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+article p{
+    margin-top: 0.3rem;
+}
+section{
+    margin-top: 5.5vh;
+    text-align: center;
+    background-color: rgb(221, 140, 154);
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1vh;
+}
+.productos-link{
+    background-color: rgb(122, 233, 236);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    height: 36px;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    padding: 2px;
+}
+aside{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    margin-left: 12vw;
+    margin-bottom: 3vh;
+}
+aside>a> img{
+    height: 5vh;
+}
+footer{
+    background-color: #7AE9EC;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px){
+    .productos-link{
+        background-color:  #7AE9EC;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        height: 36px;
+        width: 15vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        padding: 1px;
+    }
+
+    footer{
+        background-color: #7AE9EC;
+        text-align: center;
+
+    }
+    main img{
+        height: 35vh;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
+    
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    nav > a{
+        margin-left: 0.4rem ;
+        font-size: 0.8rem;
+    }
+
+}
