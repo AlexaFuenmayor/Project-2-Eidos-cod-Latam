@@ -7,9 +7,14 @@
 }
 
 
-a {
+a{
     text-decoration: none;
     color: inherit;
+
+}
+
+#contact a{
+    width: 2vw;
 }
 header{
     padding: 0.5rem;
@@ -29,7 +34,7 @@ nav ul li > a{
 
 
 .informacion_seccion img{
-    height: 34vh;
+    height: 32vh;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -67,6 +72,7 @@ article p{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 1vh;
+    margin-bottom: 20vh;
 }
 .productos-link{
     background-color: rgb(122, 233, 236);
@@ -83,11 +89,14 @@ article p{
     padding: 2px;
 }
 aside{
+    width: 100%;
+    max-width: 55vw;
     margin-top: 2vh;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
-    margin-left: 23vw;
+    /* margin-left: 23vw; */
     margin-bottom: 3vh;
+    margin: auto;
 }
 aside>a> img{
     height: 5vh;
@@ -108,6 +117,22 @@ footer{
 ul .navegation{
     list-style: none;
 
+
+}
+.contacto{
+    padding-top: 30vh;
+    padding-bottom: 4vh;
+}
+.flecha_ir_inicio {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 3vh;
+}
+
+.flecha_ir_inicio img{
+    height: 7vh;
+    margin: auto;
 
 }
 @media only screen and (min-width: 992px){
@@ -197,11 +222,14 @@ ul .navegation{
 }
 
 aside{
+    width: 100%;
+    max-width: 52vw;
     margin-top: 2vh;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
-    /* margin-left: 20vw; */
+    /* margin-left: 23vw; */
     margin-bottom: 3vh;
+    margin: auto;
 }
 
 .contacto{
@@ -218,6 +246,9 @@ aside{
     height: 10vh;
     margin: auto;
 
+}
+img >a{
+    width: 4vw;
 }
 
 
