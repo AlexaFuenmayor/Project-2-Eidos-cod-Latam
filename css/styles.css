@@ -1,17 +1,12 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
+
     scroll-behavior: smooth;
     font-family: 'Niramit', sans-serif;
 }
 
-/* Para quitar los puntos a los items de listas */
-/* ul {
-    list-style: none;
-} */
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
     color: inherit;
@@ -20,24 +15,21 @@ header{
     padding: 0.5rem;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    margin-left: 2vw;
+
 }
-nav{
-    margin-left: 2rem;
+nav ul{
+    margin-left: 1vw;
+    display: flex;
 }
-nav > a{
+nav ul li > a{
     margin-left: 0.4rem ;
-    font-size: 1.5rem;
+    font-size:1.3rem;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
-/* main {
-    margin: auto;
-} */
-main img{
-    height: 30vh;
+
+.informacion_seccion img{
+    height: 34vh;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +54,7 @@ article{
 article p{
     margin-top: 0.3rem;
 }
-section{
+.contacto_info{
     margin-top: 5.5vh;
     text-align: center;
     background-color: rgb(221, 140, 154);
@@ -91,10 +83,10 @@ section{
     padding: 2px;
 }
 aside{
-    margin-top: 2rem;
+    margin-top: 2vh;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
-    margin-left: 12vw;
+    margin-left: 23vw;
     margin-bottom: 3vh;
 }
 aside>a> img{
@@ -104,8 +96,28 @@ footer{
     background-color: #7AE9EC;
     text-align: center;
 }
+.active{
+    background-color: rgb(221, 140, 154);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: -20px 0;
+}
+ul .navegation{
+    list-style: none;
 
+
+}
 @media only screen and (min-width: 992px){
+    header > nav{
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        /* margin-left: 2vw; */
+        justify-content: left;
+    }
     .productos-link{
         background-color:  #7AE9EC;
         border-radius: 30px;
@@ -114,11 +126,15 @@ footer{
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
         height: 36px;
-        width: 15vw;
+        width: 9vw;
         margin-left: auto;
         margin-right: auto;
         margin-top: 2vh;
         padding: 1px;
+    }
+    .productos-link:hover{
+        background-color: pink;
+
     }
 
     footer{
@@ -126,19 +142,89 @@ footer{
         text-align: center;
 
     }
-    main img{
-        height: 35vh;
+    .logo-car{
+        height: 15vh;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4vh;
-    
+        margin-top: 2vh;
     }
+    .informacion_seccion{
+        display: flex;
+        /* padding: 5vw; */
+        padding-top: 10vh;
+    }
+
+    .productos-link{
+        font-size: 1rem;
+        padding: 1px 10px 8px 10px ;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    article{
+        width: 70vw;
+        margin: 0 5vw 0 0;
+    }
+
+    article>p{
+        font-size: 1.5rem;
+
+    }
+
+    .contacto_info{
+        /* margin-top: 33vh; */
+        text-align: center;
+        margin-bottom: 24vh;
+    }
+
+    .informacion_seccion{
+        margin-top: 2vh;
+    }
+    .informacion_seccion img{
+        margin-left: 6vw;
+        margin-top: 6vh;
+    }
+
+    .active{
+        background-color: rgb(221, 140, 154);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: -20px 0;
+}
+
+aside{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    /* margin-left: 20vw; */
+    margin-bottom: 3vh;
+}
+
+.contacto{
+    padding-top: 30vh;
+    padding-bottom: 4vh;
+}
+.flecha_ir_inicio {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.flecha_ir_inicio img{
+    height: 10vh;
+    margin: auto;
+
+}
+
 
 }
 
 @media only screen and (max-width: 600px){
-    nav > a{
+    ul > a{
         margin-left: 0.4rem ;
         font-size: 0.8rem;
     }

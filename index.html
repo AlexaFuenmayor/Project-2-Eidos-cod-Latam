@@ -9,33 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
     <title>Multitienda Heizel</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <img class="logo-car" src="img/car.png" alt="logo-alexa">
-        <nav> <a href="#inicio">Inicio</a>
-            <a href="#contact">Contacto</a>
+        <nav >
+            <ul>
+                <li class="navegation">
+                    <a class="active" href="#inicio">Inicio</a>
+                </li>
+                <li class="navegation">
+                    <a class="item" href="#contact">Contacto</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <img src="img/logo-heizel.png" alt="">
+        <section class="informacion_seccion">
 
-        <article>
-            <h1>Multitienda Heizel</h1>
-            <p>Somos tienda física con servicio delivery. Tenemos a tu
-                disposición gran variedad de víveres, artículos de limpieza,snacks, y muchos más... </p>
-            <a class="productos-link" href="https://www.facebook.com/multitienda.heizel/photos">Productos</a>
-        </article>
+            <img src="img/logo-heizel.png" alt="">
 
-        <section>
-            <h3>Contáctanos</h3>
-            <p>Estamos disponibles para atenderte a través de nuestros medios de
-                comunicación<br><strong>7:00am-6:00pm</strong></p>
+            <article>
+                    <h1>Multitienda Heizel</h1>
+                    <p>Somos tienda física con servicio delivery. Tenemos a tu
+                        disposición gran variedad de víveres, artículos de limpieza, snacks y mucho más... </p>
+                        <a class="productos-link" href="https://www.facebook.com/multitienda.heizel/photos">Productos</a>
+            </article>
         </section>
+        <section class="contacto">
+
         <aside id="contact">
             <a href="https://www.facebook.com/multitienda.heizel"><img src="img/facebook.png" alt="facebook-logo"></a>
             <a href="https://www.instagram.com/multitienda_heizel/"><img src="img/instagram (1).png"
@@ -44,12 +48,20 @@
                 href="https://api.whatsapp.com/send?phone=584246394313&text=Saludos.%20Somos%20multitienda%20Heizel.%20%C2%BFEn%20que%20podemos%20ayudarte?"><img
                     src="img/whatsapp.png" alt="ws-logo"></a>
         </aside>
+
+        <section class="contacto_info">
+            <h3>Contáctanos</h3>
+            <p>Estamos disponibles para atenderte a través de nuestros medios de comunicación<br><strong>7:00am-6:00pm</strong></p>
+
+            
+        </section>
+        <a class="flecha_ir_inicio" href="#inicio"><img src="img/flecha-hacia-arriba.png" alt="flecha"></a>
+    </section>
+
     </main>
+
+<script src="index.js"></script>
     <footer>WebDev Alexa Fuenmayor</footer>
-
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
-
 </body>
 
 </html>
